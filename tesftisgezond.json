@@ -1,0 +1,10 @@
+{
+  "id": "chatgpt",
+  "name": "ChatGPT Extension",
+  "version": "1.0.0",
+  "description": "Talk to ChatGPT directly from Seanime",
+  "author": "YourName",
+  "type": "plugin",
+  "language": "javascript",
+  "main": "chatgpt.js"
+}
