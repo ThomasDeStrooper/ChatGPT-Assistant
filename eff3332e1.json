@@ -6,7 +6,6 @@
   "author": "ThomasDeStrooper",
   "type": "plugin",
   "language": "javascript",
-  "payload": "// placeholder",
-  "payload_uri": "https://raw.githubusercontent.com/ThomasDeStrooper/ChatGPT-Assistant/refs/heads/main/chatgpt.js"
+  "payload": "",
+  "payload_uri": "https://raw.githubusercontent.com/ThomasDeStrooper/ChatGPT-Assistant/main/chatgpt.js"
 }
-
