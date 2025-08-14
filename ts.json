@@ -1,0 +1,8 @@
+{
+  "id": "chatgpt_plugin",
+  "name": "ChatGPT Extension",
+  "version": "1.0.0",
+  "author": "YourName",
+  "type": "plugin",
+  "payload": "// Check if user already stored their API key\\nlet apiKey = localStorage.getItem(\"chatgpt_api_key\");\\n\\nif (!apiKey) {\\n    apiKey = prompt(\"Enter your OpenAI API Key:\");\\n    if (apiKey) {\\n        localStorage.setItem(\"chatgpt_api_key\", apiKey);\\n    } else {\\n        alert(\"API Key is required to use ChatGPT.\");\\n    }\\n}\\n\\nasync function chatWithGPT(prompt) {\\n    const apiUrl = \"https://api.openai.com/v1/chat/completions\";\\n    const response = await fetch(apiUrl, {\\n        method: \"POST\",\\n        headers: {\\n            \"Content-Type\": \"application/json\",\\n            \"Authorization\": `Bearer ${apiKey}`\\n        },\\n        body: JSON.stringify({\\n            model: \"gpt-3.5-turbo\",\\n            messages: [{ role: \"user\", content: prompt }]\\n        })\\n    });\\n    const data = await response.json();\\n    return data.choices?.[0]?.message?.content || \"No response from ChatGPT.\";\\n}\\n\\n(async () => {\\n    const reply = await chatWithGPT(\"Hello from Seanime!\");\\n    console.log(reply);\\n    alert(reply);\\n})();"
+}
