@@ -1,11 +1,10 @@
 {
-  "id": "chatgpt",
+  "id": "chatgptplugin",
   "name": "ChatGPT Extension",
   "version": "1.0.0",
   "description": "Talk to ChatGPT directly from Seanime",
   "author": "ThomasDeStrooper",
   "type": "plugin",
   "language": "javascript",
-  "payload": "// placeholder",
   "payload_uri": "https://raw.githubusercontent.com/ThomasDeStrooper/ChatGPT-Assistant/main/chatgpt.js"
 }
